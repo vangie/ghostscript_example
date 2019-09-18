@@ -35,7 +35,6 @@ fun init vangie/ghostscript-example
 ## 安装依赖
 
 ```bash
-# install ghostscript which descirbed in fun.yml
 $ fun install
 
 Installing recursively on fun.yml
@@ -64,7 +63,6 @@ Creating config file /etc/papersize with new version
 ## 本地调用
 
 ```bash
-# run function localy
 $ fun local invoke pdf2jpg
 using template: template.yml
 skip pulling image aliyunfc/runtime-nodejs10:1.6.1...
@@ -92,7 +90,6 @@ RequestId: 21d9c646-1db4-403c-b018-cd4246e193d3          Billed Duration: 2132 m
 ## 部署
 
 ```bash
-# deploy it
 $ fun deploy
 using template: template.yml
 using region: cn-shanghai
@@ -111,7 +108,6 @@ service ghostscript deploy success
 ## 执行
 
 ```bash
-# invoke deployed function
 $ fun invoke pdf2jpg
 fun invoke pdf2jpg
 using template: template.yml
